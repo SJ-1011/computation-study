@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <title>Home</title>
+  <path
+    d="M18 58.5 64 20l46 38.5"
+    stroke="#2563EB"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <path
+    d="M28 53v52a7 7 0 0 0 7 7h58a7 7 0 0 0 7-7V53L64 23 28 53Z"
+    fill="#1D4ED8"/>
+  <path
+    d="M52 112V79a12 12 0 0 1 24 0v33"
+    fill="#FFFFFF"/>
+  <path
+    d="M91 40V25h10v23"
+    stroke="#2563EB"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
