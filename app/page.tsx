@@ -1,18 +1,10 @@
-import Image from "next/image";
-import WelcomeBanner from "@/components/WelcomeBanner";
-import OXQuestion from "@/components/Question/OXQuestion";
-import ShortQuestion from "@/components/Question/ShortQuestion";
+import MainPage from "./Main/page";
 
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col flex-nowrap w-full">
-        <WelcomeBanner />
-        <section className="my-8 flex flex-row flex-nowrap gap-5">
-          <OXQuestion />
-          <ShortQuestion />
-        </section>
-      </main>
+      <h1 className="hidden">전산직 전공 공부</h1>
+      <MainPage />
     </>
   );
 }

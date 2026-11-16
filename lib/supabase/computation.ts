@@ -2,24 +2,24 @@ import { supabase } from "@/lib/supabase/client";
 
 export type Computation = {
   id: number;
-  type: "ox" | "short";
   subject: string;
   question: string;
   answer: string;
+  wrong: string;
 };
 
 export type CreateComputation = {
-  type: "ox" | "short";
   subject: string;
   question: string;
   answer: string;
+  wrong: string;
 };
 
 export type UpdateComputation = {
-  type?: "ox" | "short";
   subject?: string;
   question?: string;
   answer?: string;
+  wrong?: string;
 };
 
 // CREATE

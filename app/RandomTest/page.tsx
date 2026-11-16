@@ -1,5 +1,7 @@
+import Header from "@/components/Header";
+import Test from "@/components/Test";
+
 import { getComputations } from "@/lib/supabase/computation";
-import OXQuestion from "@/components/OXQuestion";
 
 export const dynamic = "force-dynamic";
 
@@ -15,12 +17,14 @@ function shuffleQuestions<T>(questions: T[]) {
   return shuffled;
 }
 
-export default async function OXQuestionPage() {
+export default async function RandomTest() {
   const questions = await getComputations();
 
-  const oxQuestions = questions.filter((question) => question.type === "ox");
-
-  const shuffledQuestions = shuffleQuestions(oxQuestions);
-
-  return <OXQuestion questions={shuffledQuestions} />;
+  const shuffledQuestions = shuffleQuestions(questions);
+  return (
+    <>
+      <Header title="랜덤 문제 풀기" />
+      <Test questions={shuffledQuestions} />
+    </>
+  );
 }
